@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-patterns"
+version = "0.1.0"
+description = "Small references for deterministic boundaries around LLM calls."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2,<3",
+]
+
+[project.optional-dependencies]
+openai = [
+    "openai>=2.36.0",
+    "python-dotenv>=1,<2",
+]
+pandas = [
+    "pandas>=2,<4",
+]
+
+[tool.setuptools.packages.find]
+include = ["llm_patterns*"]

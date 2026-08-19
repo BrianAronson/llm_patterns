@@ -1,0 +1,16 @@
+.venv/
+.env
+.uv-cache/
+.uv-python/
+.idea/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+artifacts/
+/archive/
+*.log
+.DS_Store

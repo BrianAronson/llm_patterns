@@ -1,0 +1,3 @@
+include SETUP.md
+recursive-include examples *.md *.py
+include tests/_openai_batch_fake.py
